@@ -1,0 +1,875 @@
+/*********************** polices *****************************/
+/* nav */
+@font-face
+{
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+ }
+/* h1 */
+ @font-face
+{
+	font-family: 'Roboto-Bold'; 
+	src: url('fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+/* h2 */
+@font-face
+{
+	font-family: 'Roboto-Light'; 
+	src: url('fonts/Roboto-Light.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+/* h2 service */
+@font-face
+{
+	font-family: 'Roboto-medium'; 
+	src: url('fonts/Roboto-medium.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+/******************************* FIN polices *******************************/
+
+body
+{
+	margin: 0;
+	width: 100%;
+}
+
+h1
+{
+	font-family: 'Roboto-Bold';
+}
+
+/******************************* hearder *******************************/
+
+header
+{
+    position: fixed;
+    z-index: 4;
+    height: 5.9em;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+ /* début menu 1--------*/
+ul
+{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding-bottom: 2.4em;
+}
+
+nav li
+{
+	font-family: 'Roboto-Regular';
+	margin-right: 1.5em;
+	padding-top: 39px;
+	padding-right: 0.7em;
+	padding-left: 0.7em;
+}
+
+nav li:hover
+{
+	border-top: rgb(55,172,214) 3px solid;
+	width: 100%;
+	padding-top: 36px;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 0.8em;
+}
+/* fin menu 1 ---------*/
+/******************************* fin header *******************************/
+
+/******************************* SECTION 1 *******************************/
+
+/*debut slider----------*/
+#slider, .slide 
+{
+    height: 650px; 
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+}
+
+#slider 
+{
+    position: relative;
+}
+
+.header_slide 
+{
+    height: 6em;
+}
+
+.body_slide 
+{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+}
+
+#one .body_slide 
+{
+    background: url('images/slider/bg1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#two .body_slide 
+{
+    background: url('images/slider/bg2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#one 
+{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#two 
+{
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+#two:target 
+{
+    opacity: 1;
+}
+
+/* Bouttons slider */
+.slide nav a
+ {
+    z-index: 2;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    text-decoration: none;
+    height: 5em;
+    width: 5em;
+    border-radius: 5em;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.slide nav a:hover 
+{
+    background: rgba(0,0,0,.8);
+}
+
+.prev 
+{
+    left: -2.5em;
+}
+
+.next 
+{
+    right: -2.5em;
+}
+
+.prev i
+{
+    padding-left: 1.2em;
+}
+
+.next i 
+{
+    padding-right: 1.2em;
+}
+
+/* Texte slider */
+.text_slide 
+{
+    margin: 10%;
+    max-width: 700px;
+}
+
+.text_slide h1
+{
+	font-family: 'Roboto-Bold';
+	font-size: 1.9em;
+}
+
+.text_slide h1 span 
+{
+    color: #5CADD3;
+}
+
+.text_slide p 
+{
+     margin-bottom: 2.5em;
+     text-align: left;
+     font-family: 'Roboto-Light';
+     font-size: 1em;  
+}
+
+.infos
+{
+	font-family: 'Roboto-Light'; 
+	font-size: 1em;
+	padding: 0.6em 0.9em 0.6em 0.9em;
+	background-color: rgb(55,172,214);
+	color: white;
+	border: none;
+	border-radius: 2.5px;
+	box-shadow: 0 3px 0 rgb(0,147,191);
+}
+
+/* Effet bouton */
+.text_slide a 
+{ 
+    color: white;
+    background-color: #5CADD3;
+    padding: 0.7em 1em;
+    border-radius: 3px;
+    border-bottom: 3px solid #4494BB;
+    text-decoration: none;
+}
+/*slider fin-----------------------*/
+/******************************* fin de section 1 *******************************/
+
+/******************************* section 2 *******************************/
+#s2
+{
+	background-color: white; 
+	padding: 0.08em 0 0.08em 0;
+	width: 100%;
+}
+
+#Services
+{
+	font-family: 'Roboto-Medium';
+	text-align: center;
+	font-size: 2.4em;
+	color: black;
+	width: 100%;
+}
+
+.services
+{
+    width: 100%;
+}
+
+p
+{
+	font-family: 'Roboto-Regular';
+	font-size: 0.8em;
+	margin: 0;
+}
+
+h1 + p
+{
+	text-align: center;
+	word-wrap: break-word;
+	font-family: 'Roboto-Light'; 
+}
+
+#reduction_bloc
+{
+	width: 50%;	
+	margin: 4.5em 0 0 9em;
+}
+
+.reduction_bloc
+{
+	line-height: 2;
+}
+
+.titre_service
+{
+	font-size: 1.1em;
+	font-family: 'Roboto-medium';
+	margin: 0;
+}
+
+.paragraphes
+{
+	text-align: center;
+	line-height: 2;
+}
+
+.services
+{
+	display: inline-flex;
+
+}
+
+#ordi
+{
+	width: 50%;
+	height: 18em;
+	margin-top: 2.5em;
+	margin-left: 9em; 
+}
+
+.img_ordi
+{
+	height: 17em;
+}
+
+.icons_paragraphe
+{
+	display: flex;
+	margin-top: 1em;
+}
+
+.icons
+{
+    height: 4.3em;
+    width: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+
+#vignettes
+{
+	font-size: 1.2em;
+	color: rgb(55,172,214); 
+	border: 1px rgb(200,200,200) solid;
+	border-radius: 30px / 30px;
+	padding: 8px 8px 8px 8px;
+}
+
+#vignettess
+{
+    font-size: 1.2em;
+    color: rgb(55,172,214); 
+    border: 1px rgb(200,200,200) solid;
+    border-radius: 30px / 30px;
+    padding: 8px 8px 8px 8px;
+}
+
+#vignettesss
+{
+    font-size: 1.2em;
+    color: rgb(55,172,214); 
+    border: 1px rgb(200,200,200) solid;
+    border-radius: 30px / 30px;
+    padding: 8px 8px 8px 8px;
+}
+
+/*DEBUT les points et lignes section 2 et 3----------*/
+.agencement /*dispo bloc*/	
+{
+	display: flex;
+	justify-content: center; 
+}
+
+hr /*ligne*/
+{
+	display: inline-block;
+	/*resize: 100%;*/
+	padding: 0 1.4em 0 1.4em;
+	color: rgb(200,200,200);
+}
+
+
+
+.points /*points icons*/
+{
+	width: 0px;
+	text-align: center;
+	margin: auto;
+	border: 5px rgb(55,172,214) solid;
+	border-radius: 30px / 30px;
+	position: relative;
+	left: 39px;
+	top: 25px; 
+	outline: 3px solid white;
+}
+
+.points_dispo /*points section2 et section3*/
+{
+	width: 0;
+	text-align: center;
+	border: 6px rgb(55,172,214) solid;
+	border-radius: 30px / 30px; 
+	margin: 3.460px 3.670px 0 3.562px;
+}
+
+.contenant
+{
+	width: 1.25em;
+}
+/* FIN les points et lignes section 2 et 3----------*/
+/****************************** fin de section 2 ******************************/
+
+/****************************** section 3 ******************************/
+#s3
+{
+	padding: 2em 4em 0 4em;
+	background-color: rgb(245,245,245);
+}
+
+#s3 h1
+{
+	text-align: center;
+    font-size: 2.4em;
+}
+
+.presentation, ul
+{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+
+#menu2
+{
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding-left: 0;
+}
+
+.menu2
+{
+	background-color: rgb(220,220,220);
+	font-family: 'Roboto-Light';
+	font-size: 0.8em;
+	padding: 0.78em;
+}
+
+.menu2:hover
+{
+	background-color: rgb(55,172,214);
+	color: white;
+	border-bottom: 3px rgb(70,140,173) solid; 
+	padding-bottom: 7px;
+}
+
+.menu2:first-child
+{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius:5px;
+}
+
+.menu2:last-child
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius:5px;
+}
+
+/*DEBUT "arrow" du menu2 */
+.arrow_box:hover
+{
+	position: relative;
+}
+
+.arrow_box:hover:after
+{
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	position: absolute;
+	bottom: -17px;
+	border-top-color: rgb(70,140,173);
+	border-width: 7px;
+	margin-left: -7px;
+}
+/*FIN "arrow" menu2*/
+
+/*  Début Portfolio */
+.flex-container-portfolio a
+{
+  color: white;
+  font-size: 0.8em;
+}
+
+.flex-container-portfolio
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex-item
+{
+    position: relative;
+    width: 23%;
+    margin-bottom: 2.5%;
+}
+
+.flex-item img
+{
+    max-width: 100%;
+    display: block;
+}
+
+.flex-item .projet-detail
+{
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: calc(96.5%);
+    bottom: 0;
+}
+
+.flex-item:hover .projet-detail
+{
+    visibility: visible;
+    padding-bottom: 1em;
+}
+
+.projet-detail
+{
+    padding-left: 0.7em;
+}
+
+.projet-detail
+{
+    font-size: 1em;
+}
+
+.projet-detail p
+{
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.eyes
+{
+    position: absolute;
+    top: -29%;
+    right: 0.7em;
+    width:2.6em;
+    height:2.6em;
+    border: 2px solid white;
+    background-color: #5cadd3;
+    border-radius:100%;
+    font-size: 1.3em;
+    color: white;
+}
+
+.eyes i
+{
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*fin portfolio*/
+/******************************* fin de section 3 ******************************/
+
+/****************************** section 4 ******************************/
+#s4 
+{
+	background-color: rgba(140,197,243,0.5);
+	max-height: 31.2em;
+}
+
+#carte
+{
+	opacity: 0.4;
+}
+
+#Contact
+{
+	font-family: 'Roboto-Bold';
+	font-size: 1.3em;
+	color: black;
+}
+
+#titre_secondaire
+{
+	font-family: 'Roboto-medium';
+	font-size: 0.9em;
+}
+
+form
+{
+	width: 17.4em;
+	background-color: rgb(241,246,248);
+	position: relative;   
+	bottom: 28em; 
+	opacity: 0.7;
+	border: none;
+	margin-left: 45em;
+}
+
+fieldset
+{
+	border: none;
+}
+
+.input
+{
+	width: 22em;
+}
+
+.carte
+{
+	pointer-events: none;
+	
+}
+
+.clic
+{
+	font-family: 'Roboto-Light'; 
+	font-size: 1em;
+	background-color: rgb(55,172,214);
+	color: white;
+	border: none;
+	border-radius: 2px / 2px;
+	box-shadow: 0 2px 0 rgb(0,147,191);
+}
+
+iframe
+{
+    width: 100%;
+    height: 500px;
+    border: 0; 
+}
+/******************************* fin de section 4 ******************************/
+
+/*************************** RESPONSIVE **********************************/
+@media screen and (max-width: 1024px)
+{
+	.text_slide h1
+    {
+		text-align: left;
+	}
+
+    body
+    {
+        margin: 0;
+        width: auto;
+    }
+
+    header
+    {
+    	display: flex;
+    	flex-direction: column;
+    	height: auto;
+    }
+
+    .services
+    {
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    #reduction_bloc
+    {
+    	margin: 0;
+    	justify-content: center;
+    	width: auto;
+    }
+
+    #ordi
+    {
+    	width: 100%;
+    	height: auto;
+    	margin: 0;
+    }
+
+    #services_body
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu2
+    {
+        zoom: 1.1;
+    }
+
+    .flex-container-portfolio
+    {
+        width: 100%;
+        margin-bottom: 4%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+     .flex-item
+    {
+        width: 40%;
+    }
+
+	 .icons_paragraphe
+    {
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    }
+    form
+    {
+        position: relative;
+        left: 23%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    
+    header
+    {   
+        position: relative;
+        height: 10em;
+        margin: auto; 
+    }
+
+    #slider
+    {
+        display: none;
+    }
+
+    .services
+    {
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    }
+
+    #ordi
+    {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #ordi img
+    {
+    	height: 9em;
+    }
+
+    nav a.menu:hover:after
+    {
+        top: 1em;
+    }
+
+    #s3 li
+    {
+        font-size: 0.65rem;
+    }
+
+    .services
+    {
+        text-align: center;
+    }
+
+    .flex-container-portfolio
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     .flex-item
+    {
+        width: 90%;
+    }
+
+    #s4
+    {
+        display: flex;
+        flex-direction: column;
+        max-height: none;
+    }
+
+    #carte
+    {
+        width: 100%;
+    }
+
+    form
+    {
+       width: 100%;
+       opacity: 1;
+    }
+
+    fieldset
+    {
+        text-align: center;
+    }
+
+    form
+    {
+        position: static;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+	h1
+	{
+		font-size: 0.5em;
+	}
+
+    header, div
+    {
+        text-align: center;
+    }
+
+    .icons_paragraphe
+    {
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    }
+
+    .services
+    {
+        text-align: center;
+    }
+
+     #menu2
+    {
+        zoom: 0.9;
+    }
+
+    #s4
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    #carte
+    {
+        width: 100%;
+    }
+
+    form
+    {
+       width: 100%;
+    }
+
+    fieldset
+    {
+        text-align: center;
+    }
+}

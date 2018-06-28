@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link type='text/css' rel="stylesheet" href="projet1.css" />
+    	<link type='text/css' rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    	<link type='text/css' rel="shortcut icon" href="images/ico/favicon.ico">
+		<title> WebAgency </title>
+	</head>
+
+	<body>
+<!-- header logo + menu 1 -->	
+		<header>
+			<div>
+	<!-- logo --><img src="images/logo.png" alt="logo" />
+			</div>
+<!-- menu--><nav> 
+				<ul>
+					<li><a href="#Accueil">Accueil</a></li>
+					<li><a href="#Services">Services</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+<!-- section 1 image slider + titre -->
+		<section id="s1">
+			<div id="slider">
+	<!--1ere image dus slider-->
+		    	<div id="one" class="slide">
+		            <div class="header_slide"></div>
+		            <div class="body_slide">
+		                <nav>
+		                    <a class="prev" href="#two"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+		                    <a class="next" href="#two"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+		                </nav>
+		                <div class="text_slide">
+		                    <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS <br /> VOS PROJETS !</h1>
+		                    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+		                    <input type="submit" value="Plus d'Infos" title="plus d'infos" class="infos" />
+		                </div>
+		            </div>
+		        </div>
+
+<!--2eme image du slider-->
+		    	<div id="two" class="slide">
+		    		<div class="header_slide"></div>
+		            <div class="body_slide">
+		                <nav>
+		                    <a class="prev" href="#one"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+		                    <a class="next" href="#one"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+		                </nav>
+		                <div class="text_slide">
+		                    <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS <br />VOS PROJETS !</h1>
+		                    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+		                    <input type="submit" value="Plus d'Infos" title="plus d'infos" class="infos" />
+		                </div>
+		            </div>
+	        	</div>
+	    	</div>
+
+		</section>
+
+<!-- section 2 - Nos sevices (4 paragraphes + 3 vignettes) -->
+		<section id="s2">
+			<div>
+				<h1 id="Services">NOS SERVICES</h1>
+				<div class="agencement">
+					<div><hr /></div>
+					<div class="contenant"><div class="points_dispo"></div></div>
+					<div><hr /></div>
+				</div>
+				<p class="paragraphes">WebAgency est là pour vous créer un projet web à votre image! Fonctionnel, Design, adapté à votre projet et facile d'utilisation!<br />Nous vous garantissons visibilité et accessibilité!
+				</p>
+			</div>
+
+			<div class="services">
+				<div id="ordi">
+					<img src="images/main-feature.png" alt="mac" class="img_ordi" />
+				</div>
+				<div id="reduction_bloc">
+					<div class="icons_paragraphe">
+						<div class="icons"> 
+							<div class="fa-stack fa-lg"> 
+								<i class="fas fa-chart-line fa-stack-1x" id="vignettes"></i>
+								<div class="points"></div>
+							</div>
+						</div> 
+						<div class="reduction_bloc">
+							<h2 class="titre_service">UX design</h2>
+							<p>Nous procédons à l’analyse du "parcour utilisateur" en vue de la création et/ou de l’amélioration de votre projet. </p>
+						</div>
+					</div>
+					<div class="icons_paragraphe">
+						<div class="icons">
+							<div class="fa-stack fa-lg">
+								<i class="fas fa-cubes fa-stack-1x" id="vignettess"></i>
+								<div class="points"></div>
+							</div>
+						</div>
+						<div class="reduction_bloc">
+							<h2 class="titre_service">UI design</h2>
+							<p>
+					        Votre projet web sera intuitif, cohérent, ergonomique, attractif, pour une meilleur prise en main.</p>
+				    	</div>
+				    </div>
+				    <div class="icons_paragraphe">
+						<div class="icons">
+							<div class="fa-stack fa-lg">
+								<i class="fas fa-chart-pie fa-stack-1x" id="vignettesss"></i>
+								<div class="points"></div>
+							</div>
+						</div>
+						<div class="reduction_bloc">
+							<h2 class="titre_service">SEO</h2>
+							<p>Un « référencement naturel » mise en place en amont permettra une meilleur visibilité.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+<!--section 3 - Nos projets (menu2 + portfolio) -->
+		<section id="s3">
+			<h1 id="Portfolio">NOS PROJETS</h1>
+			<div class="agencement">
+				<div><hr /></div>
+				<div class="contenant"><div class="points_dispo"></div></div>
+				<div><hr /></div>
+			</div>
+			<p class="paragraphes">La WebAgency vous garantit un projet au plus proche de vos envies,<br />Un projet qui vous ressemble!
+			</p>
+
+			<ul id="menu2"> <!-- début menu2 -->
+				<li class="menu2 arrow_box">All Works</li>
+				<li class="menu2 arrow_box">Creative</li>
+				<li class="menu2 arrow_box">Corporate</li>
+				<li class="menu2 arrow_box">Portfolio</li>
+			</ul>
+<!-- Début Portfolio -->
+			<div class="flex-container-portfolio">
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/01.jpg" alt="funglasses">
+					<div class="projet-detail">
+						<h2>ACCESSOIRES FETES</h2>
+						<p>www.ruedudeguisement.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/02.jpg" alt="Lapin">
+					<div class="projet-detail">
+						<h2>ARTS DECORATIFS</h2>
+						<p>www.artsdeco.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/03.jpg" alt="pacific coast retro logo">
+					<div class="projet-detail">
+						<h2>CREATION DE MARQUE ET VETEMENT CUSTOMISE</h2>
+						<p>wwww.vettypo.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/04.jpg" alt="flyer">
+					<div class="projet-detail">
+						<h2>MENU PERSONNALISE</h2>
+						<p>www.menuperso.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/05.jpg" alt="sac en papier mockup">
+					<div class="projet-detail">
+						<h2>PRESENT RAFINNEES</h2>
+						<p>www.instantluxe.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/06.jpg" alt="Artiste">
+					<div class="projet-detail">
+						<h2>TOILE</h2>
+						<p>www.copartiste.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/07.jpg" alt="rocket">
+					<div class="projet-detail">
+						<h2>LE LOGO DESIGN</h2>
+						<p>wwww.lelogodesign.com</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/08.jpg" alt="graphiste designer">
+					<div class="projet-detail">
+						<h2>FOURNITURES DE BUREAU</h2>
+						<p>www.fournituredebureau.fr</p>
+						<div class="eyes">
+							<i class="fa fa-eye fa-1x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+			</div>
+		</section>
+<!-- section 4 - Formulaire de contact + carte -->
+		<section id="s4">
+			<div id="carte"> 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2156022977524!2d2.3476356153470728!3d48.87316630762074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1524640144056" allowfullscreen></iframe>
+			</div>
+			<form method="post" action="traitement.php">
+		    	<fieldset>
+		    		<div>
+		    			<h1 id="Contact">Contact Info</h1>
+		    			<br />
+		    			<span id="titre_secondaire">WebAgency SAS</span>
+		    			<p>25 rue d'Hauteville 75010 Paris</p>
+		    			<p>Tel: 01 02 03 04 05</p>
+		    		</div>
+		    		<br />
+			   		<div>
+				      	<input type="text" name="Name" id="Name" placeholder="Name" class="input" />
+			        </div>
+			        <br />
+			        <div> 
+					    <input type="email" name="E-mail" id="E-mail" placeholder="Email" class="input" />
+			        </div>
+			        <br /> 
+			        <div>
+				      	<input type="text" name="Subject" id="Subject" placeholder="Subject" maxlength="10" class="input" />
+			        </div>
+			        <br />
+			        <div>
+					    <textarea name="ameliorer" id="ameliorer" placeholder="Message" rows="6" cols="40" class="input">Message</textarea>
+			        </div>
+			        <br />
+			        <div>
+			        	<input type="submit" value="Send Message" title="Send Message" class="clic" /> 
+			        </div>
+		        </fieldset>
+			</form>
+		</section>
+<!--fin section4 / debut footer-->
+		<footer>
+			<p>
+	    		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		        	<img style="border:0;width:88px;height:31px"
+		            src="http://jigsaw.w3.org/css-validator/images/vcss"
+		            alt="CSS Valide !" />
+	    		</a>
+			</p>
+		</footer>
+
+	</body>
+</html>
+
+
+
+
